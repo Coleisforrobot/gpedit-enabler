@@ -9,7 +9,7 @@ UseLongFileName=0
 InsideCompressed=0
 CAB_FixedSize=0
 CAB_ResvCodeSigning=0
-RebootMode=N
+RebootMode=I
 InstallPrompt=%InstallPrompt%
 DisplayLicense=%DisplayLicense%
 FinishMessage=%FinishMessage%
@@ -21,10 +21,10 @@ AdminQuietInstCmd=%AdminQuietInstCmd%
 UserQuietInstCmd=%UserQuietInstCmd%
 SourceFiles=SourceFiles
 [Strings]
-InstallPrompt=
-DisplayLicense=C:\Users\Cole\code\gpedit-enabler\gpedit-enabler\license.txt
-FinishMessage=gpedit has been installed.
-TargetName=C:\Users\Cole\code\gpedit-enabler\gpedit-enabler\installer.EXE
+InstallPrompt=Do you want to enable the Group Policy Editor?
+DisplayLicense=C:\Users\Cole\code\gpedit-enabler\license.txt
+FinishMessage=The Group Policy Editor has been enabled; if it does not appear please restart your device.
+TargetName=C:\Users\Cole\code\gpedit-enabler\installer.EXE
 FriendlyName=gpedit Enabler
 AppLaunched=cmd /c enabler.bat
 PostInstallCmd=<None>
@@ -32,6 +32,6 @@ AdminQuietInstCmd=
 UserQuietInstCmd=
 FILE0="enabler.bat"
 [SourceFiles]
-SourceFiles0=C:\Users\Cole\code\gpedit-enabler\gpedit-enabler\
+SourceFiles0=C:\Users\Cole\code\gpedit-enabler\
 [SourceFiles0]
 %FILE0%=
